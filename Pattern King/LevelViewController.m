@@ -133,8 +133,6 @@
             //update UI
             [self updateBoxFive];
         }
-        
-        
     }
 }
 - (IBAction)enterButton:(UIButton *)sender {
