@@ -15,13 +15,19 @@
 		3AF4BD251999389A004C6173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD241999389A004C6173 /* AppDelegate.m */; };
 		3AF4BD281999389A004C6173 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4BD261999389A004C6173 /* Main_iPhone.storyboard */; };
 		3AF4BD2B1999389A004C6173 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4BD291999389A004C6173 /* Main_iPad.storyboard */; };
-		3AF4BD2E1999389A004C6173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD2D1999389A004C6173 /* ViewController.m */; };
 		3AF4BD301999389A004C6173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4BD2F1999389A004C6173 /* Images.xcassets */; };
 		3AF4BD371999389A004C6173 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF4BD361999389A004C6173 /* XCTest.framework */; };
 		3AF4BD381999389A004C6173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF4BD141999389A004C6173 /* Foundation.framework */; };
 		3AF4BD391999389A004C6173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF4BD181999389A004C6173 /* UIKit.framework */; };
 		3AF4BD411999389A004C6173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4BD3F1999389A004C6173 /* InfoPlist.strings */; };
 		3AF4BD431999389A004C6173 /* Pattern_KingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD421999389A004C6173 /* Pattern_KingTests.m */; };
+		3AF4BD4E19994272004C6173 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD4D19994272004C6173 /* MainViewController.m */; };
+		3AF4BD5419994287004C6173 /* LevelSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD5319994287004C6173 /* LevelSelectViewController.m */; };
+		3AF4BD571999428E004C6173 /* LevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD561999428E004C6173 /* LevelViewController.m */; };
+		3AF4BD60199952C4004C6173 /* Level.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AF4BD5F199952C4004C6173 /* Level.plist */; };
+		3AF4BD661999C78A004C6173 /* LevelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4BD651999C78A004C6173 /* LevelCell.m */; };
+		3BC063781F1C234A0065FD1A /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BC063771F1C234A0065FD1A /* OpenSans-Light.ttf */; };
+		3BFE6AB11D417FFA00EB3273 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFE6AB01D417FFA00EB3273 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +53,23 @@
 		3AF4BD241999389A004C6173 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3AF4BD271999389A004C6173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		3AF4BD2A1999389A004C6173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		3AF4BD2C1999389A004C6173 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3AF4BD2D1999389A004C6173 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3AF4BD2F1999389A004C6173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3AF4BD351999389A004C6173 /* Pattern KingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pattern KingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF4BD361999389A004C6173 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3AF4BD3E1999389A004C6173 /* Pattern KingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pattern KingTests-Info.plist"; sourceTree = "<group>"; };
 		3AF4BD401999389A004C6173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3AF4BD421999389A004C6173 /* Pattern_KingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pattern_KingTests.m; sourceTree = "<group>"; };
+		3AF4BD4C19994272004C6173 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3AF4BD4D19994272004C6173 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		3AF4BD5219994287004C6173 /* LevelSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectViewController.h; sourceTree = "<group>"; };
+		3AF4BD5319994287004C6173 /* LevelSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectViewController.m; sourceTree = "<group>"; };
+		3AF4BD551999428E004C6173 /* LevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelViewController.h; sourceTree = "<group>"; };
+		3AF4BD561999428E004C6173 /* LevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelViewController.m; sourceTree = "<group>"; };
+		3AF4BD5F199952C4004C6173 /* Level.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Level.plist; sourceTree = "<group>"; };
+		3AF4BD641999C78A004C6173 /* LevelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelCell.h; sourceTree = "<group>"; };
+		3AF4BD651999C78A004C6173 /* LevelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelCell.m; sourceTree = "<group>"; };
+		3BC063771F1C234A0065FD1A /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		3BFE6AB01D417FFA00EB3273 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFE6AB11D417FFA00EB3273 /* StoreKit.framework in Frameworks */,
 				3AF4BD171999389A004C6173 /* CoreGraphics.framework in Frameworks */,
 				3AF4BD191999389A004C6173 /* UIKit.framework in Frameworks */,
 				3AF4BD151999389A004C6173 /* Foundation.framework in Frameworks */,
@@ -103,6 +119,7 @@
 		3AF4BD131999389A004C6173 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BFE6AB01D417FFA00EB3273 /* StoreKit.framework */,
 				3AF4BD141999389A004C6173 /* Foundation.framework */,
 				3AF4BD161999389A004C6173 /* CoreGraphics.framework */,
 				3AF4BD181999389A004C6173 /* UIKit.framework */,
@@ -114,12 +131,16 @@
 		3AF4BD1A1999389A004C6173 /* Pattern King */ = {
 			isa = PBXGroup;
 			children = (
-				3AF4BD231999389A004C6173 /* AppDelegate.h */,
-				3AF4BD241999389A004C6173 /* AppDelegate.m */,
 				3AF4BD261999389A004C6173 /* Main_iPhone.storyboard */,
 				3AF4BD291999389A004C6173 /* Main_iPad.storyboard */,
-				3AF4BD2C1999389A004C6173 /* ViewController.h */,
-				3AF4BD2D1999389A004C6173 /* ViewController.m */,
+				3AF4BD4C19994272004C6173 /* MainViewController.h */,
+				3AF4BD4D19994272004C6173 /* MainViewController.m */,
+				3AF4BD5219994287004C6173 /* LevelSelectViewController.h */,
+				3AF4BD5319994287004C6173 /* LevelSelectViewController.m */,
+				3AF4BD641999C78A004C6173 /* LevelCell.h */,
+				3AF4BD651999C78A004C6173 /* LevelCell.m */,
+				3AF4BD551999428E004C6173 /* LevelViewController.h */,
+				3AF4BD561999428E004C6173 /* LevelViewController.m */,
 				3AF4BD2F1999389A004C6173 /* Images.xcassets */,
 				3AF4BD1B1999389A004C6173 /* Supporting Files */,
 			);
@@ -129,10 +150,14 @@
 		3AF4BD1B1999389A004C6173 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3BC063771F1C234A0065FD1A /* OpenSans-Light.ttf */,
+				3AF4BD231999389A004C6173 /* AppDelegate.h */,
+				3AF4BD241999389A004C6173 /* AppDelegate.m */,
 				3AF4BD1C1999389A004C6173 /* Pattern King-Info.plist */,
 				3AF4BD1D1999389A004C6173 /* InfoPlist.strings */,
 				3AF4BD201999389A004C6173 /* main.m */,
 				3AF4BD221999389A004C6173 /* Pattern King-Prefix.pch */,
+				3AF4BD5F199952C4004C6173 /* Level.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,9 +224,17 @@
 		3AF4BD091999389A004C6173 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ncunited;
 				TargetAttributes = {
+					3AF4BD101999389A004C6173 = {
+						DevelopmentTeam = Q443KXN5V7;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					3AF4BD341999389A004C6173 = {
 						TestTargetID = 3AF4BD101999389A004C6173;
 					};
@@ -231,9 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC063781F1C234A0065FD1A /* OpenSans-Light.ttf in Resources */,
 				3AF4BD2B1999389A004C6173 /* Main_iPad.storyboard in Resources */,
 				3AF4BD301999389A004C6173 /* Images.xcassets in Resources */,
 				3AF4BD281999389A004C6173 /* Main_iPhone.storyboard in Resources */,
+				3AF4BD60199952C4004C6173 /* Level.plist in Resources */,
 				3AF4BD1F1999389A004C6173 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF4BD2E1999389A004C6173 /* ViewController.m in Sources */,
+				3AF4BD5419994287004C6173 /* LevelSelectViewController.m in Sources */,
 				3AF4BD251999389A004C6173 /* AppDelegate.m in Sources */,
+				3AF4BD4E19994272004C6173 /* MainViewController.m in Sources */,
 				3AF4BD211999389A004C6173 /* main.m in Sources */,
+				3AF4BD571999428E004C6173 /* LevelViewController.m in Sources */,
+				3AF4BD661999C78A004C6173 /* LevelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +351,91 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3A53C13C19C5FD9E008A707C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "0099bc54-441c-4a30-9d58-b7688cfe5f21";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		3A53C13D19C5FD9E008A707C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				DEVELOPMENT_TEAM = Q443KXN5V7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pattern",
+					"$(PROJECT_DIR)/Pattern",
+					King,
+					"$(PROJECT_DIR)/Pattern",
+					King,
+					"$(PROJECT_DIR)/Pattern",
+					King,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pattern King/Pattern King-Prefix.pch";
+				INFOPLIST_FILE = "Pattern King/Pattern King-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncunited.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ec38f1ab-2df2-41a9-8879-a9f9e7b03ea4";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		3A53C13E19C5FD9E008A707C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pattern King.app/Pattern King";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pattern King/Pattern King-Prefix.pch";
+				INFOPLIST_FILE = "Pattern KingTests/Pattern KingTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncunited.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
 		3AF4BD441999389A004C6173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,8 +452,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -347,6 +472,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "0099bc54-441c-4a30-9d58-b7688cfe5f21";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,7 +494,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -379,6 +506,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "0099bc54-441c-4a30-9d58-b7688cfe5f21";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -390,10 +518,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				DEVELOPMENT_TEAM = Q443KXN5V7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pattern",
+					"$(PROJECT_DIR)/Pattern",
+					King,
+					"$(PROJECT_DIR)/Pattern",
+					King,
+					"$(PROJECT_DIR)/Pattern",
+					King,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pattern King/Pattern King-Prefix.pch";
 				INFOPLIST_FILE = "Pattern King/Pattern King-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncunited.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ec38f1ab-2df2-41a9-8879-a9f9e7b03ea4";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,10 +549,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Trevor Stevenson (Q443KXN5V7)";
+				DEVELOPMENT_TEAM = Q443KXN5V7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pattern",
+					"$(PROJECT_DIR)/Pattern",
+					King,
+					"$(PROJECT_DIR)/Pattern",
+					King,
+					"$(PROJECT_DIR)/Pattern",
+					King,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pattern King/Pattern King-Prefix.pch";
 				INFOPLIST_FILE = "Pattern King/Pattern King-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncunited.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ec38f1ab-2df2-41a9-8879-a9f9e7b03ea4";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: *";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -427,6 +591,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Pattern KingTests/Pattern KingTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncunited.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -445,6 +610,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pattern King/Pattern King-Prefix.pch";
 				INFOPLIST_FILE = "Pattern KingTests/Pattern KingTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ncunited.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -459,6 +625,7 @@
 			buildConfigurations = (
 				3AF4BD441999389A004C6173 /* Debug */,
 				3AF4BD451999389A004C6173 /* Release */,
+				3A53C13C19C5FD9E008A707C /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -468,16 +635,20 @@
 			buildConfigurations = (
 				3AF4BD471999389A004C6173 /* Debug */,
 				3AF4BD481999389A004C6173 /* Release */,
+				3A53C13D19C5FD9E008A707C /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AF4BD491999389A004C6173 /* Build configuration list for PBXNativeTarget "Pattern KingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AF4BD4A1999389A004C6173 /* Debug */,
 				3AF4BD4B1999389A004C6173 /* Release */,
+				3A53C13E19C5FD9E008A707C /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
