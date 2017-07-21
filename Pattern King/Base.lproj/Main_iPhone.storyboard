@@ -77,7 +77,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJa-wr-EAc">
-                                <rect key="frame" x="65" y="36" width="157" height="18"/>
+                                <rect key="frame" x="65" y="28" width="157" height="41"/>
                                 <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -96,8 +96,7 @@
                             <constraint firstItem="piM-Za-Ku9" firstAttribute="top" secondItem="aHa-Jg-IeR" secondAttribute="bottom" id="jgt-cL-ru3"/>
                             <constraint firstItem="BPY-xU-jub" firstAttribute="top" secondItem="vkE-N9-4HF" secondAttribute="bottom" constant="22" id="oAn-ax-ljf"/>
                             <constraint firstItem="aHa-Jg-IeR" firstAttribute="top" secondItem="Aq2-GC-5uu" secondAttribute="top" id="opD-zU-8jA"/>
-                            <constraint firstItem="KJa-wr-EAc" firstAttribute="centerY" secondItem="vkE-N9-4HF" secondAttribute="centerY" id="uqZ-XO-oWO"/>
-                            <constraint firstItem="KJa-wr-EAc" firstAttribute="top" secondItem="PMY-AW-yjb" secondAttribute="bottom" constant="16" id="xQF-g1-3cW"/>
+                            <constraint firstItem="KJa-wr-EAc" firstAttribute="top" secondItem="PMY-AW-yjb" secondAttribute="bottom" constant="8" id="xQF-g1-3cW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X5a-1d-O8C"/>
@@ -501,7 +500,7 @@
         <scene sceneID="mlj-NA-8oe">
             <objects>
                 <navigationController definesPresentationContext="YES" id="Bd0-ow-eyO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ExP-1u-x3h">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ExP-1u-x3h">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

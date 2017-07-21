@@ -34,22 +34,6 @@
     {
         [[NSUserDefaults standardUserDefaults] setObject:@NO forKey:@"1"];
     }
-    
-}
-
-
-- (IBAction)twitterButton:(UIButton *)sender
-{
-    NSURL *twitterURL = [NSURL URLWithString:@"twitter://user?screen_name=tstevensonapps"];
-    
-    if ([[UIApplication sharedApplication] canOpenURL:twitterURL])
-    {
-        [[UIApplication sharedApplication] openURL:twitterURL];
-    }
-    else
-    {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.twitter.com/tstevensonapps"]];
-    }
 }
 
 @end

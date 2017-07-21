@@ -10,6 +10,4 @@
 
 @interface MainViewController : UIViewController
 
-- (IBAction)twitterButton:(UIButton *)sender;
-
 @end
