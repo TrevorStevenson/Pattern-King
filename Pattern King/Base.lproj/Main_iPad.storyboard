@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="1VI-1T-ZzU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="1VI-1T-ZzU">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Bold</string>
+        </array>
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Level Select View Controller-->
         <scene sceneID="DRS-Cr-uIR">
@@ -24,13 +33,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9B6-yF-0gj">
-                                <rect key="frame" x="20" y="20" width="96" height="72"/>
+                                <rect key="frame" x="20" y="20" width="72" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="UK5-5A-UA3"/>
+                                    <constraint firstAttribute="width" constant="72" id="UK5-5A-UA3"/>
                                     <constraint firstAttribute="height" constant="72" id="jNp-zW-xNa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="22"/>
-                                <state key="normal" title="Back" backgroundImage="backButton">
+                                <state key="normal" backgroundImage="ExitButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -39,8 +48,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GE-Mz-SDH">
-                                <rect key="frame" x="240" y="28" width="289" height="47"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                <rect key="frame" x="275.5" y="28" width="217.5" height="47"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="40"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -53,13 +62,13 @@
                                         <rect key="frame" x="0.0" y="28" width="728" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LtK-4m-qpD" id="wEN-1P-qNS">
-                                            <rect key="frame" x="0.0" y="0.0" width="682" height="81.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="695" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xpW-U2-Rys">
-                                                    <rect key="frame" x="28" y="0.0" width="654" height="81.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="678" height="81.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="30"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -117,14 +126,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="eLT-RL-csN">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Band" translatesAutoresizingMaskIntoConstraints="NO" id="oR1-Os-AJo">
+                                <rect key="frame" x="0.0" y="156" width="768" height="140"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3e-5W-2oN">
-                                <rect key="frame" x="20" y="28" width="96" height="72"/>
+                                <rect key="frame" x="20" y="28" width="72" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="DXR-fV-pgo"/>
-                                    <constraint firstAttribute="width" constant="96" id="EAH-To-jr3"/>
+                                    <constraint firstAttribute="width" constant="72" id="EAH-To-jr3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
-                                <state key="normal" title="Quit" backgroundImage="backButton">
+                                <state key="normal" backgroundImage="ExitButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -132,57 +144,29 @@
                                     <action selector="quitButton:" destination="drR-Ug-rs1" eventType="touchUpInside" id="Jwk-Mm-0iB"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="pOB-8S-eSt">
-                                <rect key="frame" x="102" y="163" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Sct-JG-F2H"/>
-                                    <constraint firstAttribute="height" constant="100" id="gsH-MN-W8a"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-6v-M5l">
-                                <rect key="frame" x="218" y="163" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="BjN-KX-5lQ"/>
-                                    <constraint firstAttribute="width" constant="100" id="XsL-1S-0sd"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHj-ik-a9x">
-                                <rect key="frame" x="230" y="198" width="76" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <rect key="frame" x="198.5" y="205" width="97.5" height="41"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="35"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="guj-v7-nAO">
-                                <rect key="frame" x="450" y="163" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="VEJ-kl-ZFz"/>
-                                    <constraint firstAttribute="height" constant="100" id="qAf-81-LiK"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgV-r5-dlT">
-                                <rect key="frame" x="462" y="198" width="76" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <rect key="frame" x="473.5" y="205" width="97.5" height="41"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="35"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="RbY-2X-zmF">
-                                <rect key="frame" x="566" y="163" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="BLA-Na-rDT"/>
-                                    <constraint firstAttribute="height" constant="100" id="nSU-Ie-yR9"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyQ-Xk-zdI">
-                                <rect key="frame" x="608" y="198" width="16" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <rect key="frame" x="611" y="205" width="19.5" height="41"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="35"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-qC-6sR">
-                                <rect key="frame" x="114" y="198" width="76" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <rect key="frame" x="61" y="205" width="97.5" height="41"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="35"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCz-mp-8JA">
-                                <rect key="frame" x="300" y="41" width="169" height="47"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
+                                <rect key="frame" x="272.5" y="24" width="223.5" height="82"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="70"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -192,9 +176,9 @@
                                     <constraint firstAttribute="width" constant="100" id="0Bv-ou-pfG"/>
                                     <constraint firstAttribute="height" constant="100" id="3bA-n3-c4o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="1" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="1" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -207,9 +191,9 @@
                                     <constraint firstAttribute="height" constant="100" id="75Z-gI-Ngm"/>
                                     <constraint firstAttribute="width" constant="100" id="h9l-OZ-Dn9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="4" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="4" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -222,9 +206,9 @@
                                     <constraint firstAttribute="height" constant="100" id="1lw-r9-VOI"/>
                                     <constraint firstAttribute="width" constant="100" id="Rpo-It-1RC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="5" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="5" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -237,9 +221,9 @@
                                     <constraint firstAttribute="width" constant="100" id="0y2-B4-hMi"/>
                                     <constraint firstAttribute="height" constant="100" id="DtG-9g-i5O"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="6" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="6" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -252,9 +236,9 @@
                                     <constraint firstAttribute="height" constant="100" id="noe-Iw-DRq"/>
                                     <constraint firstAttribute="width" constant="100" id="zJK-Nq-Trc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="9" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="9" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -267,9 +251,9 @@
                                     <constraint firstAttribute="width" constant="100" id="PAD-ZW-B9x"/>
                                     <constraint firstAttribute="height" constant="100" id="kGw-eB-7Vu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="8" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="8" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -282,9 +266,9 @@
                                     <constraint firstAttribute="width" constant="100" id="USH-mh-0Ga"/>
                                     <constraint firstAttribute="height" constant="100" id="eUn-sf-EPL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="7" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="7" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -297,9 +281,9 @@
                                     <constraint firstAttribute="width" constant="100" id="D0r-OT-NJH"/>
                                     <constraint firstAttribute="height" constant="100" id="ls9-0N-Am3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="0" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="0" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -312,9 +296,9 @@
                                     <constraint firstAttribute="height" constant="100" id="T0K-jc-nl0"/>
                                     <constraint firstAttribute="width" constant="100" id="rGm-by-m4Z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="2" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="2" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -327,9 +311,9 @@
                                     <constraint firstAttribute="height" constant="100" id="K2A-NZ-vBl"/>
                                     <constraint firstAttribute="width" constant="100" id="WFo-FC-3sc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="3" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="3" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -342,35 +326,28 @@
                                     <constraint firstAttribute="width" constant="100" id="Jd8-70-cHV"/>
                                     <constraint firstAttribute="height" constant="100" id="sfT-gY-jP5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
-                                <state key="normal" title="Del" backgroundImage="box">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="60"/>
+                                <state key="normal" title="Del" backgroundImage="NumBG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="delButton:" destination="drR-Ug-rs1" eventType="touchUpInside" id="mGf-eu-IyH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-Yz-v3C">
-                                <rect key="frame" x="334" y="163" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3Oc-kG-tfx"/>
-                                    <constraint firstAttribute="width" constant="100" id="Tbf-QO-Am2"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12345" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR3-3w-Fd2">
-                                <rect key="frame" x="346" y="198" width="76" height="30"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="25"/>
+                                <rect key="frame" x="336" y="205" width="97.5" height="41"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="35"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSf-kD-hVf">
-                                <rect key="frame" x="0.0" y="904" width="768" height="120"/>
+                                <rect key="frame" x="0.0" y="884" width="768" height="140"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="zf4-xI-HKF"/>
+                                    <constraint firstAttribute="height" constant="140" id="zf4-xI-HKF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="40"/>
-                                <state key="normal" title="Enter" backgroundImage="enter">
+                                <state key="normal" backgroundImage="EnterButton">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -382,58 +359,52 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8LX-g9-LHV" firstAttribute="centerX" secondItem="eLT-RL-csN" secondAttribute="centerX" id="0NE-gc-sR8"/>
-                            <constraint firstItem="oR3-3w-Fd2" firstAttribute="centerY" secondItem="XfR-Yz-v3C" secondAttribute="centerY" id="0bg-hF-FhT"/>
+                            <constraint firstItem="oR1-Os-AJo" firstAttribute="top" secondItem="bCz-mp-8JA" secondAttribute="bottom" constant="50" id="0dv-Fe-keL"/>
                             <constraint firstItem="8iD-Vk-LIw" firstAttribute="leading" secondItem="CbL-0F-ed3" secondAttribute="trailing" constant="16" id="2gb-qj-v22"/>
                             <constraint firstItem="T54-La-8Hk" firstAttribute="centerX" secondItem="CbL-0F-ed3" secondAttribute="centerX" id="52K-rf-Ilm"/>
                             <constraint firstItem="UZA-aN-nlF" firstAttribute="top" secondItem="FmZ-bT-AF9" secondAttribute="bottom" constant="16" id="6w2-TS-Yy4"/>
                             <constraint firstAttribute="trailing" secondItem="ZSf-kD-hVf" secondAttribute="trailing" id="7ER-Wr-z2g"/>
+                            <constraint firstItem="oR3-3w-Fd2" firstAttribute="leading" secondItem="PHj-ik-a9x" secondAttribute="trailing" constant="40" id="7qX-Pn-cVC"/>
                             <constraint firstItem="8LX-g9-LHV" firstAttribute="leading" secondItem="R6D-Su-pSN" secondAttribute="trailing" constant="16" id="8ev-Mo-Ncc"/>
                             <constraint firstItem="qHe-L8-4bw" firstAttribute="top" secondItem="eLT-RL-csN" secondAttribute="bottom" id="8nb-3p-PXP"/>
-                            <constraint firstItem="iaD-6v-M5l" firstAttribute="leading" secondItem="pOB-8S-eSt" secondAttribute="trailing" constant="16" id="9Rs-b3-x1J"/>
                             <constraint firstItem="T54-La-8Hk" firstAttribute="leading" secondItem="XPJ-dR-Ie1" secondAttribute="trailing" constant="16" id="9vb-hG-8qs"/>
+                            <constraint firstItem="PHj-ik-a9x" firstAttribute="centerY" secondItem="oR3-3w-Fd2" secondAttribute="centerY" id="AaN-Os-cdq"/>
                             <constraint firstItem="eLT-RL-csN" firstAttribute="top" secondItem="GDH-2P-v0g" secondAttribute="top" id="CWx-Kf-0Cu"/>
-                            <constraint firstItem="SyQ-Xk-zdI" firstAttribute="centerY" secondItem="RbY-2X-zmF" secondAttribute="centerY" id="GQu-Y6-8Ch"/>
                             <constraint firstItem="8LX-g9-LHV" firstAttribute="centerX" secondItem="T54-La-8Hk" secondAttribute="centerX" id="Grr-AB-W5k"/>
                             <constraint firstItem="FmZ-bT-AF9" firstAttribute="leading" secondItem="7vf-fd-emo" secondAttribute="trailing" constant="16" id="HhX-gn-LLP"/>
+                            <constraint firstItem="SyQ-Xk-zdI" firstAttribute="leading" secondItem="LgV-r5-dlT" secondAttribute="trailing" constant="40" id="LAg-pG-guH"/>
                             <constraint firstItem="ZSf-kD-hVf" firstAttribute="leading" secondItem="GDH-2P-v0g" secondAttribute="leading" id="OLR-zf-62X"/>
                             <constraint firstItem="n3e-5W-2oN" firstAttribute="leading" secondItem="GDH-2P-v0g" secondAttribute="leading" constant="20" id="RF4-0n-7Mf"/>
-                            <constraint firstItem="PHj-ik-a9x" firstAttribute="centerY" secondItem="iaD-6v-M5l" secondAttribute="centerY" id="S8o-Eo-vMa"/>
-                            <constraint firstItem="XfR-Yz-v3C" firstAttribute="centerX" secondItem="eLT-RL-csN" secondAttribute="centerX" id="U0Z-j9-qgc"/>
-                            <constraint firstItem="iaD-6v-M5l" firstAttribute="centerY" secondItem="XfR-Yz-v3C" secondAttribute="centerY" id="V7c-Jc-YiP"/>
                             <constraint firstItem="XPJ-dR-Ie1" firstAttribute="top" secondItem="R6D-Su-pSN" secondAttribute="bottom" constant="16" id="Wwr-su-DTF"/>
-                            <constraint firstItem="oR3-3w-Fd2" firstAttribute="centerX" secondItem="XfR-Yz-v3C" secondAttribute="centerX" id="X0d-UW-hHH"/>
                             <constraint firstItem="8LX-g9-LHV" firstAttribute="top" secondItem="7vf-fd-emo" secondAttribute="bottom" constant="16" id="XOS-74-P6M"/>
                             <constraint firstItem="bCz-mp-8JA" firstAttribute="centerX" secondItem="eLT-RL-csN" secondAttribute="centerX" id="YaB-KM-f7G"/>
+                            <constraint firstItem="oR3-3w-Fd2" firstAttribute="centerX" secondItem="eLT-RL-csN" secondAttribute="centerX" id="aPC-7v-G4k"/>
+                            <constraint firstItem="7vf-fd-emo" firstAttribute="top" secondItem="oR1-Os-AJo" secondAttribute="bottom" constant="50" id="akv-Nw-icG"/>
                             <constraint firstItem="8LX-g9-LHV" firstAttribute="centerY" secondItem="eLT-RL-csN" secondAttribute="centerY" id="bE2-Ne-8ln"/>
                             <constraint firstItem="8iD-Vk-LIw" firstAttribute="top" secondItem="Su7-P1-M7t" secondAttribute="bottom" constant="16" id="bib-y6-lFK"/>
-                            <constraint firstItem="pOB-8S-eSt" firstAttribute="centerY" secondItem="iaD-6v-M5l" secondAttribute="centerY" id="bwm-o5-SPp"/>
-                            <constraint firstItem="guj-v7-nAO" firstAttribute="centerY" secondItem="XfR-Yz-v3C" secondAttribute="centerY" id="csJ-bX-E3Y"/>
-                            <constraint firstItem="iCO-qC-6sR" firstAttribute="centerX" secondItem="pOB-8S-eSt" secondAttribute="centerX" id="djF-0j-40l"/>
+                            <constraint firstAttribute="trailing" secondItem="oR1-Os-AJo" secondAttribute="trailing" id="cD5-f4-VEa"/>
                             <constraint firstItem="UZA-aN-nlF" firstAttribute="centerY" secondItem="8LX-g9-LHV" secondAttribute="centerY" id="dwc-IY-k5m"/>
                             <constraint firstItem="8LX-g9-LHV" firstAttribute="centerX" secondItem="7vf-fd-emo" secondAttribute="centerX" id="eJC-1O-3jl"/>
-                            <constraint firstItem="iCO-qC-6sR" firstAttribute="centerY" secondItem="pOB-8S-eSt" secondAttribute="centerY" id="ePT-xr-jj7"/>
-                            <constraint firstItem="XfR-Yz-v3C" firstAttribute="leading" secondItem="iaD-6v-M5l" secondAttribute="trailing" constant="16" id="eSb-ZN-OZW"/>
+                            <constraint firstItem="SyQ-Xk-zdI" firstAttribute="centerY" secondItem="oR3-3w-Fd2" secondAttribute="centerY" id="efA-VC-kSk"/>
                             <constraint firstItem="UZA-aN-nlF" firstAttribute="leading" secondItem="8LX-g9-LHV" secondAttribute="trailing" constant="16" id="fMg-R2-L6a"/>
                             <constraint firstItem="qHe-L8-4bw" firstAttribute="top" secondItem="ZSf-kD-hVf" secondAttribute="bottom" id="fxt-eH-eFd"/>
                             <constraint firstItem="R6D-Su-pSN" firstAttribute="top" secondItem="pqW-hi-Zt5" secondAttribute="bottom" constant="16" id="gOm-pa-rte"/>
+                            <constraint firstItem="iCO-qC-6sR" firstAttribute="centerY" secondItem="oR3-3w-Fd2" secondAttribute="centerY" id="h7b-12-lKg"/>
+                            <constraint firstItem="oR3-3w-Fd2" firstAttribute="centerY" secondItem="oR1-Os-AJo" secondAttribute="centerY" id="iFW-kQ-Zzh"/>
                             <constraint firstItem="bCz-mp-8JA" firstAttribute="centerY" secondItem="n3e-5W-2oN" secondAttribute="centerY" id="jBS-rU-uLY"/>
                             <constraint firstItem="Su7-P1-M7t" firstAttribute="leading" secondItem="T54-La-8Hk" secondAttribute="trailing" constant="16" id="jKp-zW-xr7"/>
+                            <constraint firstItem="PHj-ik-a9x" firstAttribute="leading" secondItem="iCO-qC-6sR" secondAttribute="trailing" constant="40" id="jLh-ro-ldS"/>
                             <constraint firstItem="n3e-5W-2oN" firstAttribute="top" secondItem="gfc-Le-k0D" secondAttribute="bottom" constant="8" id="kS8-AR-ONX"/>
                             <constraint firstAttribute="trailing" secondItem="eLT-RL-csN" secondAttribute="trailing" id="nKy-0i-Gxz"/>
-                            <constraint firstItem="RbY-2X-zmF" firstAttribute="centerY" secondItem="guj-v7-nAO" secondAttribute="centerY" id="nM9-wW-Hl1"/>
                             <constraint firstItem="eLT-RL-csN" firstAttribute="leading" secondItem="GDH-2P-v0g" secondAttribute="leading" id="ncX-Xu-0YZ"/>
-                            <constraint firstItem="guj-v7-nAO" firstAttribute="leading" secondItem="XfR-Yz-v3C" secondAttribute="trailing" constant="16" id="ogG-nU-7Kg"/>
-                            <constraint firstItem="XfR-Yz-v3C" firstAttribute="top" secondItem="bCz-mp-8JA" secondAttribute="bottom" constant="75" id="pEs-1x-KDp"/>
-                            <constraint firstItem="RbY-2X-zmF" firstAttribute="leading" secondItem="guj-v7-nAO" secondAttribute="trailing" constant="16" id="qLu-3e-HdF"/>
                             <constraint firstItem="7vf-fd-emo" firstAttribute="leading" secondItem="pqW-hi-Zt5" secondAttribute="trailing" constant="16" id="rOf-VD-A3r"/>
                             <constraint firstItem="T54-La-8Hk" firstAttribute="top" secondItem="8LX-g9-LHV" secondAttribute="bottom" constant="16" id="s5K-WI-53B"/>
                             <constraint firstItem="Su7-P1-M7t" firstAttribute="top" secondItem="UZA-aN-nlF" secondAttribute="bottom" constant="16" id="s7I-An-yX1"/>
-                            <constraint firstItem="LgV-r5-dlT" firstAttribute="centerX" secondItem="guj-v7-nAO" secondAttribute="centerX" id="syD-pT-dTX"/>
+                            <constraint firstItem="LgV-r5-dlT" firstAttribute="centerY" secondItem="oR3-3w-Fd2" secondAttribute="centerY" id="stT-tL-6GU"/>
+                            <constraint firstItem="oR1-Os-AJo" firstAttribute="leading" secondItem="GDH-2P-v0g" secondAttribute="leading" id="tHc-TK-nEH"/>
                             <constraint firstItem="CbL-0F-ed3" firstAttribute="top" secondItem="T54-La-8Hk" secondAttribute="bottom" constant="16" id="uk2-Fw-Pgn"/>
-                            <constraint firstItem="PHj-ik-a9x" firstAttribute="centerX" secondItem="iaD-6v-M5l" secondAttribute="centerX" id="vGy-xJ-7A3"/>
-                            <constraint firstItem="SyQ-Xk-zdI" firstAttribute="centerX" secondItem="RbY-2X-zmF" secondAttribute="centerX" id="wOB-ze-ZvB"/>
+                            <constraint firstItem="LgV-r5-dlT" firstAttribute="leading" secondItem="oR3-3w-Fd2" secondAttribute="trailing" constant="40" id="x77-Px-eEH"/>
                             <constraint firstItem="R6D-Su-pSN" firstAttribute="centerY" secondItem="8LX-g9-LHV" secondAttribute="centerY" id="y8g-Gu-IBw"/>
-                            <constraint firstItem="LgV-r5-dlT" firstAttribute="centerY" secondItem="guj-v7-nAO" secondAttribute="centerY" id="yie-oT-7je"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qG7-xr-to4"/>
@@ -481,14 +452,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pattern" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFu-jy-sh6">
-                                <rect key="frame" x="215" y="97" width="338" height="94"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="80"/>
+                                <rect key="frame" x="253.5" y="97.5" width="261" height="93.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="80"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="King" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-Ws-ksd">
-                                <rect key="frame" x="288" y="186" width="193" height="94"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="80"/>
+                                <rect key="frame" x="303.5" y="186" width="162" height="93.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="80"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -517,7 +488,8 @@
         <!--Navigation Controller-->
         <scene sceneID="yGz-A7-HhM">
             <objects>
-                <navigationController id="1VI-1T-ZzU" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="1VI-1T-ZzU" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aOn-q1-2cz">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -533,15 +505,10 @@
     </scenes>
     <resources>
         <image name="BG" width="320" height="480"/>
-        <image name="backButton" width="50" height="37"/>
-        <image name="box" width="52" height="52"/>
-        <image name="circle" width="52" height="52"/>
-        <image name="enter" width="322" height="42"/>
+        <image name="Band" width="1125" height="279"/>
+        <image name="EnterButton" width="1125" height="216"/>
+        <image name="ExitButton" width="150" height="150"/>
+        <image name="NumBG" width="198" height="198"/>
         <image name="playButton" width="336" height="336"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>
